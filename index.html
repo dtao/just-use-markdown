@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Just Use Markdown</title>
+    <script type="text/javascript" src="jum.js"></script>
+
+    <style type="text/css">
+        body {
+            font-family: Georgia, serif;
+            font-size: 200%;
+        }
+
+        article {
+            width: 960px;
+            margin: auto;
+        }
+
+        blockquote {
+            margin-left: 0;
+            border-left: 4px solid gray;
+            padding-left: 1em;
+
+            color: gray;
+            font-size: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <script type="text/markdown"><!--
+        Just Use Markdown
+        =================
+
+        So here's an idea I had. What if you just used Markdown directly in your
+        HTML? You could put it in `<script>` tags and then use JavaScript to parse
+        it and then inject the resulting HTML in the same place in the DOM.
+
+        For example, here's the body of this very page using this technique:
+
+        ```html
+        <body>
+            <article>
+                <script type="text/markdown">
+                Just Use Markdown
+                =================
+
+                So here's an idea I had. What if you just
+                used Markdown directly in your HTML?
+                Wouldn't that be cool?
+
+                [...]
+                </script>
+            </article>
+        </body>
+        ```
+
+        You've gotta admit, it's an interesting idea, right?
+
+        > You're so clever, @dtao! Someone should give you an award!  
+        > -@dtao
+        --></script>
+    </article>
+</body>
+
+</html>
